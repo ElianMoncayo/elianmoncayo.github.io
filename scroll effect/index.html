@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scroll</title>
+</head>
+<body>
+    <section>
+        <img src="fondo.png" id="fondo">
+        <img src="moonhd.png" id="moon">
+        <img src="silueta.png" id="silueta">
+        <h2 id="text">Lorem ipsum</h2>
+    </section>
+    <div id="contenedor">
+        <h3>Hello</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim at distinctio amet, animi cum iusto eligendi nesciunt eos suscipit fugit iste accusamus ullam. Quidem aliquam vitae perferendis sunt, veniam, dicta voluptatem, animi ratione et quam blanditiis minima suscipit enim autem dignissimos natus quos sit. Libero, ex alias dolorem ipsam adipisci placeat fugiat labore accusamus nemo quod similique reprehenderit quam error unde beatae quidem vitae autem eveniet. Deleniti quam quis blanditiis libero minus dolores veniam, repellendus sint dolore, rerum veritatis adipisci est? Explicabo soluta harum placeat adipisci praesentium autem vel molestias saepe. Deserunt unde eum, incidunt, quasi fugiat libero odit facere vel ratione corporis neque voluptatem 
+            porro quidem, dolores repellat tempora repudiandae asperiores labore numquam laudantium nemo tempore! Molestiae tempore accusamus et adipisci aspernatur deserunt praesentium saepe dolorum cum fugit! Doloribus voluptatum corrupti modi amet, eaque nemo, eum deleniti qui accusamus et illum maxime. <br></br>Voluptatem provident quasi ipsa necessitatibus quos dolore nostrum, cupiditate odio asperiores fuga natus eaque perspiciatis dolor, dolores distinctio beatae sed et alias quidem facilis. Aspernatur, odit! Accusamus, adipisci quo vero odit ab consequatur assumenda? Earum optio facere voluptas pariatur sapiente dicta eum! Fugit non unde, libero vitae beatae in molestias voluptatem ullam magni expedita perspiciatis explicabo nam alias hic, ut aspernatur, 
+            doloribus corporis ratione ipsum dicta? Itaque deleniti doloribus consectetur eum recusandae culpa repellendus illo, ipsum blanditiis adipisci non omnis, inventore minus libero voluptas facilis excepturi, tempora velit et fugit aspernatur! Ad iusto obcaecati voluptate laborum laudantium sequi provident illum numquam. Facilis, commodi! Eius, rerum ut repellat commodi eaque ducimus reiciendis aliquid atque nam debitis libero dignissimos non quia esse voluptatem dicta tempora quae facere nulla animi quasi blanditiis eveniet architecto? Ex nihil harum voluptates facilis, quasi reprehenderit porro inventore libero, perspiciatis tenetur quo maiores necessitatibus, quidem culpa! Dolorum cupiditate accusantium deserunt consequatur eaque vel id a.</p>
+     </div>
+    <script type="text/javascript">
+        let fondo = document.getElementById('fondo');
+        let moon = document.getElementById('moon');
+        let silueta = document.getElementById('silueta');
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            fondo.style.top = value * 0.5 + 'px';
+            moon.style.top = value * 0.5 + 'px';
+            moon.style.left = value * 0.5 + 'px';
+            silueta.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>
