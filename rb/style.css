@@ -23,7 +23,7 @@ header{
 .bx-menu{
   position: absolute;
   top: 20px;
-  right: 2rem;
+  right: 1.5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
