@@ -515,7 +515,9 @@ header{
 }
 
 @media screen and (max-width:800px) {
-
+  .header{
+  background-attachment: scroll;
+    }
   .center{
     width: 300px;
     
