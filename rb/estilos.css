@@ -378,7 +378,7 @@ footer{
 
 @media screen and (max-width:800px) {
     .header{
-     background-attachment: fixed;   
+     background-attachment: scroll;   
     } 
     .box{
         height: 500px;
