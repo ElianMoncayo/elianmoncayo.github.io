@@ -77,6 +77,11 @@
 }
 
 @media screen and (max-width:580px) {
+    .navbar ul li a{
+        padding-left: 36%;
+        padding-right: 36%;
+    }
+    
     .contact-us{
         text-align: center;
         width: 80%;
